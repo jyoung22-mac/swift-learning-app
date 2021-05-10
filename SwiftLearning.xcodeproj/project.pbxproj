@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		598ACB832648E42A000EF212 /* SwiftLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598ACB822648E42A000EF212 /* SwiftLearningApp.swift */; };
-		598ACB852648E42A000EF212 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598ACB842648E42A000EF212 /* ContentView.swift */; };
+		598ACB852648E42A000EF212 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598ACB842648E42A000EF212 /* HomeView.swift */; };
 		598ACB872648E42B000EF212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 598ACB862648E42B000EF212 /* Assets.xcassets */; };
 		598ACB8A2648E42B000EF212 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 598ACB892648E42B000EF212 /* Preview Assets.xcassets */; };
+		598ACB962648E5B7000EF212 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598ACB952648E5B7000EF212 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		598ACB7F2648E42A000EF212 /* SwiftLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		598ACB822648E42A000EF212 /* SwiftLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearningApp.swift; sourceTree = "<group>"; };
-		598ACB842648E42A000EF212 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		598ACB842648E42A000EF212 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		598ACB862648E42B000EF212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		598ACB892648E42B000EF212 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		598ACB8B2648E42B000EF212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		598ACB952648E5B7000EF212 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,10 @@
 			isa = PBXGroup;
 			children = (
 				598ACB822648E42A000EF212 /* SwiftLearningApp.swift */,
-				598ACB842648E42A000EF212 /* ContentView.swift */,
+				598ACB912648E4FA000EF212 /* Views */,
+				598ACB922648E511000EF212 /* ViewModels */,
+				598ACB932648E51D000EF212 /* Resources */,
+				598ACB942648E52A000EF212 /* Helpers */,
 				598ACB862648E42B000EF212 /* Assets.xcassets */,
 				598ACB8B2648E42B000EF212 /* Info.plist */,
 				598ACB882648E42B000EF212 /* Preview Content */,
@@ -67,6 +72,36 @@
 				598ACB892648E42B000EF212 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		598ACB912648E4FA000EF212 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				598ACB842648E42A000EF212 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		598ACB922648E511000EF212 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				598ACB952648E5B7000EF212 /* ContentModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		598ACB932648E51D000EF212 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		598ACB942648E52A000EF212 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				598ACB852648E42A000EF212 /* ContentView.swift in Sources */,
+				598ACB852648E42A000EF212 /* HomeView.swift in Sources */,
 				598ACB832648E42A000EF212 /* SwiftLearningApp.swift in Sources */,
+				598ACB962648E5B7000EF212 /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
