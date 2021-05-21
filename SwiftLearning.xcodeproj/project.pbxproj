@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592BF68226579C710036200C /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592BF68126579C710036200C /* RectangleCard.swift */; };
 		5931B5FC264C973C00D5C745 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5931B5FB264C973C00D5C745 /* ContentDetailView.swift */; };
 		5931B5FF264C9B2400D5C745 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5931B5FE264C9B2400D5C745 /* AVKit.framework */; };
 		5931B601264C9CAB00D5C745 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5931B600264C9CAB00D5C745 /* Constants.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		592BF68126579C710036200C /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		5931B5FB264C973C00D5C745 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		5931B5FE264C9B2400D5C745 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		5931B600264C9CAB00D5C745 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				5975C3C5264B65A100FC746C /* ContentViewRow.swift */,
 				5931B5FB264C973C00D5C745 /* ContentDetailView.swift */,
 				59C3F45D2655D7F7008A2CEE /* CodeTextView.swift */,
+				592BF68126579C710036200C /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				59C3F45E2655D7F7008A2CEE /* CodeTextView.swift in Sources */,
 				598ACB962648E5B7000EF212 /* ContentModel.swift in Sources */,
 				5975C3C0264A1DD900FC746C /* Models.swift in Sources */,
+				592BF68226579C710036200C /* RectangleCard.swift in Sources */,
 				5931B601264C9CAB00D5C745 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
