@@ -35,14 +35,26 @@ struct HomeView: View {
                                     tag: module.id,
                                     selection: $model.currentContentSelected,
                                     label: {
-                                        // Learning Card
                                         
+                                        
+                                        // Learning Card
                                         HomeViewRow(image: module.content.image, title: "Learn \(module.category)", decription: module.content.description, count: "\(module.content.lessons.count) Lesson", time: module.content.time)
                                     })
                                 
+                                    NavigationLink(
+                                        destination: TestView()
+                                                    .onAppear(perform: {
+                                                        model.beginTest(module.id)
+                                    }),
+                                        tag: module.id,
+                                                   selection: $model.currentTestSelected) {
+                                        
+                                        // Test Card
+                                        HomeViewRow(image: module.test.image, title: "Learn \(module.category) Test", decription: module.test.description, count: "\(module.test.questions.count) Lesson", time: module.test.time)
+                                    }
+                                
                             
-                            // Test Card
-                            HomeViewRow(image: module.test.image, title: "Learn \(module.category) Test", decription: module.test.description, count: "\(module.test.questions.count) Lesson", time: module.test.time)
+                         
                         }
                         }
                         
