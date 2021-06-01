@@ -97,13 +97,27 @@ struct TestView: View {
                 // Submit Button
                 Button {
                     
-                    // Change submitted state to true
-                    submitted = true
-                    
-                    // Check the answer and increment the counter if correct
-                    if selectedAnswerIndex == model.currentQuestion!.correctIndex {
-                        numCorrect += 1
+                    // check if answer has been submitted
+                    if submitted == true {
+                        // Answer has already been submitted, moved to next question
+                        model.nextQuestiopn()
+                        
+                        // Reset properties
+                        submitted = false
+                        selectedAnswerIndex = nil
                     }
+                    else {
+                        // Sunmit the answer
+                        
+                        // Change submitted state to true
+                        submitted = true
+                        
+                        // Check the answer and increment the counter if correct
+                        if selectedAnswerIndex == model.currentQuestion!.correctIndex {
+                            numCorrect += 1
+                        }
+                    }
+                
                     
                 } label: {
                     
@@ -112,7 +126,7 @@ struct TestView: View {
                         RectangleCard(color: .green)
                             .frame(height: 48)
                         
-                        Text("Submit")
+                        Text(buttonText)
                             .bold()
                             .foregroundColor(Color.white)
                     }
@@ -126,10 +140,36 @@ struct TestView: View {
         }
         
     }
+    
+    var buttonText:String {
+        
+        // check if answer has been submitted
+        if submitted == true {
+            if model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
+                // This is the last question
+                return "Finish"
+                
+            
+        }
+            else {
+                // There is a next question 
+                return "Next"
+                
+            }
+        }
+        else {
+            // There is a next question
+            return "Submit"
+            
+        }
+        
+    }
 }
+
 
 struct TestView_Previews: PreviewProvider {
     static var previews: some View {
         TestView()
     }
 }
+
