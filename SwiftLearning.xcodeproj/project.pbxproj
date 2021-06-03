@@ -24,6 +24,7 @@
 		598ACB992648ED4E000EF212 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 598ACB972648ED4E000EF212 /* style.html */; };
 		598ACB9A2648ED4E000EF212 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 598ACB982648ED4E000EF212 /* data.json */; };
 		59C3F45E2655D7F7008A2CEE /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C3F45D2655D7F7008A2CEE /* CodeTextView.swift */; };
+		59FD96302665C6B4004AB05A /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FD962F2665C6B4004AB05A /* TestResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		598ACB972648ED4E000EF212 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		598ACB982648ED4E000EF212 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		59C3F45D2655D7F7008A2CEE /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
+		59FD962F2665C6B4004AB05A /* TestResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				59C3F45D2655D7F7008A2CEE /* CodeTextView.swift */,
 				592BF68126579C710036200C /* RectangleCard.swift */,
 				592BF683265C8DBA0036200C /* TestView.swift */,
+				59FD962F2665C6B4004AB05A /* TestResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				592BF684265C8DBA0036200C /* TestView.swift in Sources */,
+				59FD96302665C6B4004AB05A /* TestResultView.swift in Sources */,
 				598ACB852648E42A000EF212 /* HomeView.swift in Sources */,
 				5975C3C2264B439300FC746C /* HomeViewRow.swift in Sources */,
 				5975C3C4264B542500FC746C /* ContentView.swift in Sources */,
